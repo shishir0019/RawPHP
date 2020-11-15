@@ -1,0 +1,357 @@
+:root {
+    --primary-color: #4a168d;
+    --accent-color: #000000;
+    --button-transition: .3s ease;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    font-family: var(--font-family);
+    /* color: #95caf1; */
+}
+
+header a {
+    transition: var(--button-transition);
+    color: var(--accent-color)
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+}
+
+header nav .title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: xx-large;
+}
+
+header nav .title a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+header nav .title a:hover {
+    color: var(--accent-color);
+}
+
+header nav ul {
+    padding: 0;
+    margin: 20px;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.menu .title {}
+
+.menu .cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.menu .cart button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: var(--button-transition);
+    /* border-radius: 5px; */
+    padding: 10px 20px;
+}
+
+.menu .cart .tigger {
+    background-color: #ffffff80;
+}
+
+.menu .cart button:hover {
+    /* border: 1px solid #fff; */
+    background-color: #ffffff80;
+}
+
+.menu .cart button .chip {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    width: 12px;
+    height: 12px;
+    right: 10px;
+    top: 5px;
+}
+
+.menu .cart .list {
+    /* border-radius: 5px; */
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #ffffffee;
+    color: #000000;
+    z-index: 100;
+    width: 400px;
+    padding: 25px;
+    box-shadow: -1px 0px 5px -2px #000000;
+    display: none;
+    animation-name: fadeIn;
+    animation-duration: .3s;
+}
+
+.menu .cart .list .arrow {
+    position: absolute;
+    right: 15px;
+    top: -14px;
+    shadow: -1px 0px 5px -2px #000000;
+}
+
+.menu .cart .list .arrow img {
+    width: 22px;
+    height: 22px;
+}
+
+.menu .cart .list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.menu .cart .list ul li {
+    padding: 15px 0;
+}
+
+.menu .cart .list ul::-webkit-scrollbar {
+    display: none;
+}
+
+.menu .cart .list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu .cart .list .item .qut {
+    display: flex;
+    /* border: 1px solid grey; */
+    align-items: center;
+}
+
+.menu .cart .list .item .qut button {
+    padding: 2px;
+    width: 18px;
+    /* border-radius: 10px; */
+    background-color: aquamarine;
+}
+
+.menu .cart .list .item .qut button:hover {
+    background-color: #00000050;
+}
+
+.menu .cart .list .item .img {
+    width: 25px;
+    height: 25px;
+}
+
+.menu .cart .list .item .des {
+    width: 50%;
+    font-size: smaller;
+}
+
+.menu .cart .list .item .pri {}
+
+.menu .cart .list .item .btn {}
+
+.menu .cart .list .item .btn button {
+    padding: 5px;
+    font-weight: bold;
+    /* background-color: #d3d3d3; */
+    border-radius: 50%;
+    color: #f00;
+    width: 25px;
+    height: 25px;
+}
+
+.menu .cart .list .item .btn button:hover {
+    background-color: #f1c9c9;
+}
+
+.menu .cart .list .item div {
+    /* margin: 2px; */
+    /* border: 1px solid red; */
+}
+
+/* Item */
+
+.items {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.items .item {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    min-width: 200px;
+    position: relative;
+}
+
+.items .item:hover {
+    /* box-shadow: -1px 0px 5px -2px #000000; */
+    box-shadow: 0 0 2px 1px #99999980;
+}
+
+.items .item img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .2s;
+}
+
+.items .item:hover img {
+    filter: brightness(50%);
+}
+
+.items a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.items a:hover {
+    color: var(--primary-color);
+}
+
+.items .item button {
+    z-index: 50;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #23b12f;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+.items .item:hover button {
+    display: block;
+}
+
+.items .item button:hover {
+    background-color: #29c436;
+}
+
+.items .item .dis {
+    position: absolute;
+    padding: 10px 25px;
+    color: #fff;
+    z-index: 50;
+    text-align: center;
+    display: none;
+}
+
+.items .item:hover .dis {
+    display: block;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 25px 0;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer nav ul {
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+}
+
+.footer nav ul li {
+    list-style: none;
+}
+
+.footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff80;
+}
+
+@media (max-width: 950px) {
+    .menu {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .items .item {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 460px) {
+    .items .item {
+        height: 320px;
+        width: 320px;
+    }
+}

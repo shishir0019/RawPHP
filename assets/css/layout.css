@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    /* background-color: #fffceb; */
+}
+
+*:focus {
+    outline: 0;
+}
+
+/* test */
+.t {
+    border: 1px solid red;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.shadow{
+    box-shadow: 0 .5px 1px 0 #00000033, 0 6px 20px 0 lightgrey;
+}
+/* Layout */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    /* border: 1px solid red; */
+}
+/* Main */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        top: 55px;
+    }
+    to {
+        opacity: 1;
+        top: 45px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        top: 45px;
+    }
+    to {
+        opacity: 0;
+        top: 55px;
+    }
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        right: -10px;
+    }
+    to {
+        opacity: 1;
+        /* left: 0; */
+    }
+}
+
+
+/* Slider */
+
+.slide {
+    display: none;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 10px solid var(--accent-color);
+}
+
+.slide .slide-title {
+    font-size: 100%;
+    font-family: var(--font-family);
+    width: 400px;
+    background-color: #ffffffc0;
+    padding: 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #000;
+    animation-name: fadeInSlide;
+    animation-duration: .5s;
+}
+
+.slide img {
+    width: 100%;
+    min-width: 600px;
+    height: 400px;
+}
+
+@media (max-width: 850px) {
+    .container {
+        width: 100%;
+    }
+    .slide .slide-title {
+        font-size: 80%;
+        color: var(--accent-color);
+        background-color: #00000080;
+        padding: 0 10px;
+        right: 0;
+        /* top: 0; */
+        bottom: 0;
+        width: 50%;
+    }
+}
