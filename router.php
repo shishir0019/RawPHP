@@ -2,7 +2,7 @@
 include('./model/Path.php');
 
 $paths = [
-    new Path('/', './views/index.php'),
+    new Path('/', './views/home.php'),
     new Path('/category', './views/category.php'),
     new Path('/categories', './views/categories.php'),
     new Path('/item', './views/item.php'),
@@ -26,8 +26,10 @@ function route($url)
 
 $url = "$_SERVER[PATH_INFO]";
 
+include_once('./inc/Header.php');
 if (route($url) == '') {
     include('./views/404.php');
 } else {
     include(route($url)->getView());
 }
+include_once('./inc/Footer.php');

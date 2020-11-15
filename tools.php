@@ -1,5 +1,4 @@
 <?php
-include_once('./router.php');
 
 function urlGen($url, $params = [])
 {

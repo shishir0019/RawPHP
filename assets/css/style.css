@@ -78,7 +78,7 @@ header nav ul li a:hover {
     position: relative;
 }
 
-.menu .cart button {
+.menu .cart #cartButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,6 @@ header nav ul li a:hover {
     border: none;
     cursor: pointer;
     transition: var(--button-transition);
-    /* border-radius: 5px; */
     padding: 10px 20px;
 }
 
@@ -95,12 +94,11 @@ header nav ul li a:hover {
     background-color: #ffffff80;
 }
 
-.menu .cart button:hover {
-    /* border: 1px solid #fff; */
+.menu .cart #cartButton:hover {
     background-color: #ffffff80;
 }
 
-.menu .cart button .chip {
+.menu .cart #cartButton .chip {
     position: absolute;
     display: flex;
     align-items: center;
@@ -113,10 +111,11 @@ header nav ul li a:hover {
     height: 12px;
     right: 10px;
     top: 5px;
+    border: none;
 }
 
+/* Cart item */
 .menu .cart .list {
-    /* border-radius: 5px; */
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
     top: 45px;
@@ -130,18 +129,6 @@ header nav ul li a:hover {
     display: none;
     animation-name: fadeIn;
     animation-duration: .3s;
-}
-
-.menu .cart .list .arrow {
-    position: absolute;
-    right: 15px;
-    top: -14px;
-    shadow: -1px 0px 5px -2px #000000;
-}
-
-.menu .cart .list .arrow img {
-    width: 22px;
-    height: 22px;
 }
 
 .menu .cart .list ul {
@@ -169,7 +156,6 @@ header nav ul li a:hover {
 
 .menu .cart .list .item .qut {
     display: flex;
-    /* border: 1px solid grey; */
     align-items: center;
 }
 
@@ -178,6 +164,7 @@ header nav ul li a:hover {
     width: 18px;
     /* border-radius: 10px; */
     background-color: aquamarine;
+    border: none;
 }
 
 .menu .cart .list .item .qut button:hover {
@@ -206,6 +193,7 @@ header nav ul li a:hover {
     color: #f00;
     width: 25px;
     height: 25px;
+    border: none;
 }
 
 .menu .cart .list .item .btn button:hover {

@@ -7,16 +7,16 @@ class Item
     protected $price;
     protected $description;
     protected $imgURl;
-    protected $typeId;
+    protected $categoryID;
 
-    function __construct($id, $name, $price, $description, $imgURl, $typeId)
+    function __construct($id, $name, $price, $description, $imgURl, $categoryID)
     {
         $this->id = $id;
         $this->name = $name;
         $this->price = $price;
         $this->description = $description;
         $this->imgURl = $imgURl;
-        $this->typeId = $typeId;
+        $this->categoryID = $categoryID;
     }
 
     public function getId()
@@ -39,9 +39,9 @@ class Item
     {
         return $this->imgURl;
     }
-    public function getTypeId()
+    public function getCategoryID()
     {
-        return $this->typeId;
+        return $this->categoryID;
     }
 
     public function getArray()

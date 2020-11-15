@@ -15,11 +15,11 @@ $WebSite = new WebSite(
 
 $Menus = [
     new Link(1, 'category', 'River Fish'),
-    new Link(1, 'category', 'Sea Fish'),
-    new Link(1, 'category', 'Cannel Fish'),
-    new Link(1, 'category', 'Market Fish'),
-    new Link(2, 'page', 'About'),
-    new Link(3, 'page', 'Contact')
+    new Link(2, 'category', 'Sea Fish'),
+    new Link(3, 'category', 'Cannel Fish'),
+    new Link(4, 'category', 'Market Fish'),
+    new Link(5, 'page', 'About'),
+    new Link(6, 'page', 'Contact')
 ];
 
 $Items = [
@@ -32,9 +32,9 @@ $Items = [
     new Item(7, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
     new Item(8, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 4),
     new Item(9, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 3),
-    new Item(10,'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
-    new Item(11,'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
-    new Item(12,'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
+    new Item(10, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
+    new Item(11, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
+    new Item(12, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
     new Item(13, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/mane.jpeg', 3),
     new Item(14, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 4),
     new Item(15, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 4),
@@ -42,7 +42,7 @@ $Items = [
     new Item(17, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
     new Item(18, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 4),
     new Item(19, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 3),
-    new Item(10,'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
+    new Item(10, 'নদীর বোয়াল', 350, 'মাওয়া ঘাট থেকে সংগ্রহ করা পদ্মার বোয়াল মাছ।  প্রতিটি মাছের ওজন কম বেশি ১কেজি।', '/assets/img/items/image0.jpeg', 2),
 ];
 
 $SlideItems = [
@@ -53,18 +53,3 @@ $SlideItems = [
     new Slide(5, 'img5', '/assets/img/slide/IMG5.jpg')
 ];
 
-$selected_menu = null;
-foreach ($GLOBALS['Menus'] as $menu) {
-    if ($menu->getName() == $_GET['type']) {
-        $selected_menu = $menu;
-    }
-}
-function getItems($item)
-{
-    if ($GLOBALS['selected_menu'] == null) {
-        return true;
-    };
-    return $item->getTypeId() == $GLOBALS['selected_menu']->getId();
-}
-
-$Items = array_filter($Items, "getItems");

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include_once('data.php') ?>
 
 <head>
     <meta charset="UTF-8">
